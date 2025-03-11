@@ -1,59 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playwrite+CO:wght@100..400&family=Satisfy&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&family=Great+Vibes&family=Playwrite+CO:wght@100..400&family=Satisfy&family=Yeseva+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
 *{
     margin: 0;
     box-sizing: border-box;
 }
-body{
-    background-image: linear-gradient(to bottom, #383737,#1a1919,#000000);
+html,body{
+    background-image: linear-gradient(to bottom, #1a1818,#1a1919,#000000);
     background-repeat: no-repeat;
     background-size:100% 100%;
+    font-family: "Fira Sans", serif;
+    color: white;
+    height: 100%;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 nav{
-    background-image: linear-gradient(to right, #970404, #570303);
+    background-image: linear-gradient(to right,rgb(41, 1, 1), rgb(102, 3, 3), rgb(13, 0, 0));
     text-align: center;
-    height: 80px;
+    height: 90px;
 }
+
 nav > li{
     list-style: none;
     display: inline-block;
-    margin: 20px auto 40px auto;
-    
+    margin-top: 30px;
 }
 
-li > a{
+nav>h1{
+    color: #fff;
+    display: inline-block;
+    float: left;
+    margin:20px auto auto 30px;
+    font-size: 60px;
+    font-family: "Great Vibes", cursive;
+    text-shadow: 3px 5px 10px rgba(255, 0, 0, 0.84);
+}
+
+#principal>h1{
+    margin-top: 50px;
+}
+
+nav>li > a{
     color: white;
     text-decoration: none;
-    margin-right: 50px;
-    font-size: 20px;
-    padding: 10px;
+    font-size: 18px;
+    margin-right: 36px;
 }
 
 li> a:hover{
-    background-color: #400c0c8a;
-    border-radius: 10px;
-    padding: 15px;
+    background-color: #ba0909a2;
+    border-radius: 15px;
+    padding: 13px;
+    color:  #ffffff;
     border-bottom: 2px solid rgba(73, 3, 3, 0.784);
-    box-shadow: 5px 5px 15px rgba(105, 4, 4, 0.548);
+    box-shadow:inset 5px 5px 15px rgba(30, 1, 1, 0.84);
+    
 }
 
 
-
-#principal> img{
-    margin-bottom: 10%
-
+#principal>h1{
+    color: white;
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 30px;
+    font-family: "Yeseva One", serif;
+    text-shadow: 3px 5px 10px rgba(128, 128, 128, 0.679);
 }
 
 #apresentando{
     background-image: linear-gradient(to right, rgba(41, 1, 1, 0.532), rgba(102, 3, 3, 0.504), rgba(13, 0, 0, 0.563)); 
-  
+    height: 880px;
+    display: flex;
+    align-items: center;
+}
+
+:root{
+    --degradeRed:rgba(41, 1, 1, 0.532), rgba(102, 3, 3, 0.504), rgba(13, 0, 0, 0.563);
+    
 }
 
 .apresentacao{
-    
-    
+    margin:auto;
+    background-color: #000000d9;
+    height: 750px;
+    border-radius: 30px;
+    text-align: center;
+    width: 310px;
+    box-shadow: 10px 10px 25px 10px rgba(35, 1, 1, 0.923);
 }
 
 .apresentacao>img{
-    
+    border-radius: 30px 30px 0 0;
+    width: 100%;
+
 
 }
+
+.apresentacao>p{
+    color: #ffffff;
+}
+
+.apresentacao>p,.botao{
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+    margin: 10px;
+    
+}
+
+.botao{
+    display: inline-block;
+    width: 170px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 25px;
+    background-color: #2b0303;
+    color: rgb(255, 255, 255);
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.703);
+    border: none;
+
+}
+
+.botao:hover{
+    
+    background-color: rgba(75, 11, 11, 0.744);
+    color: rgb(255, 255, 255);
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.64);
+}
+
+#parado{
+    position: relative;
+    
+}
+
+#wtts{
+    width: 65px;
+    position: fixed;
+    top: 87%;
+    left: 95%;
+    
+    
+}
+
+footer{
+    height: 70px;
+    background-image: linear-gradient(to right,rgb(41, 1, 1), rgb(102, 3, 3), rgb(13, 0, 0));
+    margin-top: 80px;
+    
+}
+
+footer>p{
+    color: white;
+    text-align: center;
+    margin-bottom: 5px;
+
+}
+
+#imgRodape{
+    display: flex;
+}
+
+#imgRodape> img{
+    margin: auto;
+    padding: 10px;
+}
+
+#planos{
+    background-image: linear-gradient(to right, rgba(41, 1, 1, 0.532), rgba(102, 3, 3, 0.504), rgba(13, 0, 0, 0.563)); 
+    height: 900px;
+    display: flex;
+    color: white;
+}
+
+.planosDetalhe{
+    margin:auto;
+    background-color: #0000008d;
+    height: 640px;
+    border-radius: 30px;
+    width: 380px;
+    box-shadow: 10px 10px 25px 10px rgba(35, 1, 1, 0.923);
+}
+
+
+
+.planosDetalhe>h2{
+    text-align: center;
+    
+}
+
+.planosDetalhe>ul{
+    list-style: none;
+}
+
+.paragrafoPlano{
+    color: white;
+    width: 270px;
+    text-align: center;
+    padding-top: 30px;
+    padding-right: 20px;
+    margin: auto;
+}
+
+.DestaquePlanos{
+    color: white;
+    text-align: center;
+    margin: 70px;
+    font-size: 30px;
+    font-family: "Yeseva One", serif;
+    text-shadow: 3px 5px 10px rgba(128, 128, 128, 0.679);
+}
+
+.iconsNav{
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.bodyVermelho{
+    background-image: linear-gradient(to bottom, rgba(106, 0, 0, 0.903), rgb(71, 2, 2), rgb(13, 0, 0));
+    height: 900px;
+    
+}
+
+
+form>h2{
+    text-align: center;
+    margin-top: 30px;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    font-family: "Yeseva One", serif;
+    text-shadow: 3px 5px 10px rgba(128, 128, 128, 0.679);
+}
+
+form{
+    height: 650px;
+    display: flex;
+    background-color: #d0cccc63;
+    flex-direction: column;
+    width: 460px;
+    border-radius: 25px;
+    box-shadow: 8px 8px 20px #0a09099d;
+    margin: 30px auto;
+}
+
+label{
+    margin: 20px auto 2px 30px;
+}
+
+#senha, #email{
+    height: 60px;
+    width: 350px;
+    margin-left: 30px;
+    border: none;
+    border-radius: 18px;
+    background-color: rgba(212, 208, 208, 0.44);
+}
+
+#botaoLogin{
+    color: #4c0202;
+    font-size: 20px;
+}
+
+#botaoLogin,#botaoGoogle{
+    background-color: white;
+    border: none;
+    height: 70px;
+    width: 300px;
+    border-radius: 18px;
+    margin: 30px 55px 15px 65px;
+    font-weight: 600;
+}
+
+#botaoLogin:hover,#botaoGoogle:hover{
+    background-color: rgba(255, 255, 255, 0.352);
+    color: white;
+}
+
+#botaoGoogle{
+    font-size: 15px;
+    color: rgb(2, 0, 0);
+}
+form>p{
+    text-align: center;
+}
+
+#cadastro{
+    text-decoration: none;
+    color: #430000;
+    font-weight: 500;
+}
+
+#cadastro:hover{
+    color: #860202;
+    text-decoration: underline;
+}
+
+#linhasOu{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: rgb(241, 241, 241);
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+#linhasOu::before,
+#linhasOu::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    margin: 0px 10px;
+}
+
+#principalEspaco{
+    text-align: center;
+}
+
+#principalEspaco>h1{
+    margin-top: 2%;
+}
+
+#principalEspaco>h1,h2,h3{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    font-family: "Yeseva One", serif;
+    text-shadow: 3px 5px 10px rgba(128, 128, 128, 0.679);
+}
+
+#caixaEspaco{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 0 auto;
+    padding-top: 2%;
+    height: 900px;
+
+}
+
+#caixaEspaco>img{
+    width: 300px;
+    height: 300px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.775);
+}
+
+#locaisEspaco{
+    background-color: rgb(136, 135, 135);
+    margin-top: 10px;
+}
+
+#locaisEspaco>ul>li{
+    list-style: none;
+
+}
+
+
+
+
